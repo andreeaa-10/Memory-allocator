@@ -1,7 +1,6 @@
 <h1>
     Memory allocator
 </h1>
-I developed a custom memory allocator in C that efficiently manages dynamic allocations using a block metadata structure and a ring buffer for optimized memory reuse. It supports both malloc and calloc, handling fragmentation and alignment to enhance performance. 
-<br>
-Implemented brk() and mmap() for dynamic allocation, with memory alignment, block splitting, and coalescing to reduce fragmentation. Used a best-fit strategy for efficient block reuse and preallocated memory chunks to minimize syscalls. 
- </br>
+I developed a custom memory allocator in C that efficiently manages dynamic memory allocations using a metadata structure for each memory block. 
+It supports both malloc and calloc, and implements techniques for managing fragmentation, including coalescing free blocks to reduce external fragmentation.
+
