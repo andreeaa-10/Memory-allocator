@@ -11,5 +11,13 @@ It supports both malloc and calloc, and implements techniques for managing fragm
   <li>Implemented best-fit allocation to minimize fragmentation.</li>
   <li>Block splitting and coalescing to optimize memory reuse.</li>
 </ul>
+<h2>
+    Performance Enhancements
+</h2>
+<ul>
+  <li>Heap preallocation to reduce syscall overhead.</li>
+  <li>Metadata structure (block_meta) for tracking memory blocks efficiently.</li>
+  <li>Memory alignment (8 bytes) for better access performance.</li>
+</ul>
 
 
