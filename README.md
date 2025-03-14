@@ -6,7 +6,10 @@ It supports both malloc and calloc, and implements techniques for managing fragm
 <h2>
     Memory Management Strategies
 </h2>
-- Used brk() for small allocations and mmap() for large allocations.
-- Implemented best-fit allocation to minimize fragmentation.
-- Block splitting and coalescing to optimize memory reuse.
+<ul>
+  <li>Used brk() for small allocations and mmap() for large allocations.</li>
+  <li>Implemented best-fit allocation to minimize fragmentation.</li>
+  <li>Block splitting and coalescing to optimize memory reuse.</li>
+</ul>
+
 
